@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Wasa Tradingbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Wasa Tradingbot</h1>
+    <button id="connectWallet">🔗 Anslut Wallet</button>
+    <p id="walletAddress">Ingen wallet ansluten</p>
+
+    <label for="budget">Budget (€):</label>
+    <input type="number" id="budget" value="100">
+
+    <label for="strategy">Strategi:</label>
+    <select id="strategy">
+        <option value="arbitrage">Arbitrage</option>
+        <option value="buy_low_sell_high">Buy Low / Sell High</option>
+    </select>
+
+    <div class="buttons">
+        <button id="startBot">🚀 Starta Bot</button>
+        <button id="stopBot">🛑 Stoppa Bot</button>
+    </div>
+
+    <p id="status">Botstatus: Offline</p>
+
+    <h2>Logg</h2>
+    <pre id="log"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
